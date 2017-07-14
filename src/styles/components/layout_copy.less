@@ -1,0 +1,33 @@
+@import "../../styles/theme/size.less";
+
+.layout-copy-wrap {
+  padding: 0 @layout_padding;
+  .layout-copy {
+    display: block;
+    padding-top: 10px;
+    margin: 30px -@layout_padding 20px;
+    box-sizing: content-box;
+    clear: both;
+    text-align: center;
+    color: #9ea7b4;
+    background-color: #fff;
+    position: relative;
+    p {
+      margin-top: 5px;
+    }
+    p:first-child {
+      margin-top: 20px;
+    }
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: @layout_padding;
+      right: @layout_padding;
+      height: 1px;
+      box-sizing: border-box;
+      border-top: 1px dashed #ccc;
+    }
+  }
+}

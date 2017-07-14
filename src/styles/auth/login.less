@@ -1,0 +1,86 @@
+@import "../theme/size.less";
+
+.layout {
+  background-color: #f5f7f9;
+  .layout-login {
+    min-height: 450px;
+    width: 100%;
+    background: #f5f7f9;
+    position: relative;
+    .demo-carousel {
+      min-height: 450px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
+  .layout-login:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.3));
+  }
+
+  .layout-placard {
+    padding: 20px @layout_padding;
+    height: 32px;
+    h3 {
+      display: block;
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      text-align: center;
+      background-color: #444;
+      color: #fff;
+      float: left;
+    }
+    ul {
+      display: block;
+      height: 32px;
+      float: left;
+      overflow: hidden;
+      li {
+        display: block;
+        position: relative;
+        padding-left: 5px;
+        width: 33%;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+        text-align: center;
+        a {
+          padding-left: 5px;
+          color: #888;
+          overflow: hidden;
+        }
+      }
+    }
+    .placard-more {
+      float: right;
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      color: #aaa;
+    }
+    .placard-tag {
+      background-color: #f53;
+      color: #fff;
+      padding: 0 3px;
+      border-radius: 2px;
+      font-size: 8px;
+      margin-right: 3px;
+    }
+    .layout-placard:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+}

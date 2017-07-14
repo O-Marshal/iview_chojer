@@ -1,0 +1,26 @@
+@import "./theme/size.less";
+
+.layout-wrap {
+  background-color: #f5f7f9;
+  .layout-logo {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    border-radius: 3px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    cursor: pointer;
+  }
+  .layout-nav {
+    margin: 0 80px;
+    height: inherit;
+    float: right;
+  }
+  .layout-nav:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
